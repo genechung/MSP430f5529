@@ -1,5 +1,5 @@
 /*
- *MSP430F5529 P2.0Êä³ö25%PWM
+ *MSP430F5529 P2.0ÃŠÃ¤Â³Ã¶25%PWMPWM
  */
  #include <msp430f5529.h>
 
