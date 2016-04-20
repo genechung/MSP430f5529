@@ -11,10 +11,10 @@ void delay()
 int main()
 {
 	WDTCTL=WDTPW+WDTHOLD;
-	P1DIR=0xfd;
-	P1REN|=BIT1;
+	P1DIR = ~BIT1;
+	P1REN=BIT1;
 	//P1DIR|=BIT1;
-	P1OUT=0xff;
+	P1OUT= BIT1;
 	while(1)
 	{
 		if((P1IN&BIT1)==0)

@@ -10,9 +10,9 @@ int main()
 	WDTCTL=WDTPW+WDTHOLD;
 	P1DIR=0xfd;
 
-	P1REN|=BIT1;//配置按键上拉电阻
+	P1REN=BIT1;//配置按键上拉电阻
 	P1IFG=0x00;//清除中断标志
-	P1IE=BIT1;//开启中断
+	P1IE|=BIT1;//开启中断
 	P1IES=BIT1;//下降沿触发
 	P1IN=BIT1;
 	_enable_interrupt();
